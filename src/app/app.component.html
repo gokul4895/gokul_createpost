@@ -1,0 +1,28 @@
+<div class="card-header">
+  <h3>SUBMIT YOUR FEEDS</h3>
+</div>
+
+<div class="card-body">
+  <form class="form col-md-6" #userpost="ngForm" (ngSubmit)="postverified()">
+    <div class="form group">
+      <label for="category"> Category </label>
+    <select>
+      <option *ngFor="let i of cats">{{i}}</option>
+    </select>
+    <br>
+    <br>
+      <label for="title">Title</label>
+      <input type="text" style="font-size:18pt;width:600px;" class="form-control" [(ngModel)]="User.usertitle" name="usertitle" placeholder="Title of the content" required>
+    </div>
+    <br>  
+    <div class="form-group">
+      <label for="post">Share your Writtings !</label>
+      <input type="text" style="font-size: 18pt;height: 200px;width: 600px;"  class="form-control" [(ngModel)]="User.post" name="post" minlength="10" placeholder="Share your feeds" required/>
+    </div> 
+    <br>
+    <label class="form-label" for="customFile">Choose Image</label>
+<input type="file" class="form-control" id="customFile" />
+<br>
+    <button class="btn btn-primary"[disabled]="userpost.form.invalid">Share</button>
+  </form>
+</div>

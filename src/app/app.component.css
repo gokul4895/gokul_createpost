@@ -1,0 +1,24 @@
+.card-body
+{
+  color:brown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 80px;
+  border: brown 3px solid;
+  font-size: large;
+padding-left: 30px;
+
+}
+.btn btn-primary
+{
+  color: brown;
+}
+
+h3
+{
+  padding-left: 5px;
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
